@@ -1,4 +1,4 @@
-package com.example.mpplus;
+package com.example.plus;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
