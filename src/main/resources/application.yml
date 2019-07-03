@@ -7,3 +7,6 @@ spring:
     url: jdbc:mysql://localhost/lvyou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true
 
 
+logging:
+  level:
+    com.example.plus.mapper : debug

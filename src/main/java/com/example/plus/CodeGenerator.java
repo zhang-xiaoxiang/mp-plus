@@ -70,8 +70,8 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName(scanner("mp-plus"));
-        pc.setParent("com.baomidou.ant");
+        //pc.setModuleName(scanner("单模块不用配置"));
+        pc.setParent("com.example.plus");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -125,13 +125,13 @@ public class CodeGenerator {
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setNaming(NamingStrategy.underline_to_camel);
-        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.baomidou.ant.common.BaseEntity");
-        strategy.setEntityLombokModel(true);
-        strategy.setRestControllerStyle(true);
+        //strategy.setNaming(NamingStrategy.underline_to_camel);
+        //strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+        //strategy.setSuperEntityClass("com.baomidou.ant.common.BaseEntity");
+        //strategy.setEntityLombokModel(true);
+        //strategy.setRestControllerStyle(true);
         // 公共父类
-        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
+        //strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
         strategy.setInclude(scanner("user").split(","));
