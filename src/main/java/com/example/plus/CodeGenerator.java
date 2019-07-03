@@ -128,7 +128,7 @@ public class CodeGenerator {
         //strategy.setNaming(NamingStrategy.underline_to_camel);
         //strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         //strategy.setSuperEntityClass("com.baomidou.ant.common.BaseEntity");
-        //strategy.setEntityLombokModel(true);
+        strategy.setEntityLombokModel(true);
         //strategy.setRestControllerStyle(true);
         // 公共父类
         //strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
