@@ -5,8 +5,7 @@ spring:
     username: root
     password: root
     url: jdbc:mysql://localhost/lvyou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true
-
-
+#配置日志级别
 logging:
   level:
     com.example.plus.mapper : debug

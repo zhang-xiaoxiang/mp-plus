@@ -12,6 +12,8 @@ import lombok.experimental.Accessors;
  * <p>
  * 客户端用户表
  * </p>
+ * <p>
+ * 注意主键ID  @TableId,没有命名为id/那么需要自己配置或者加注解
  *
  * @author zhangxiaoxiang
  * @since 2019-07-04

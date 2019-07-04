@@ -10,17 +10,20 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * MpPlusApplication:
+ *
  * @author zhangxiaoxiang
  * @date 2019/7/2
  */
+
 @Slf4j
+//扫描dao层(也叫Mapper接口层,一个意思)
 @MapperScan("com.example.plus.mapper")
 @SpringBootApplication
 public class MpPlusApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(MpPlusApplication.class, args);
-        log.info("mybatis-plus 入门");
+        log.info("mybatis-plus 入门,官方文档");
+        System.out.println("https://mp.baomidou.com/");
     }
 
 }

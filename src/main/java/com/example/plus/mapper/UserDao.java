@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2019-07-04
  */
 public interface UserDao extends BaseMapper<User> {
-
+//这里面有丰富的查询方法,自定义的也可以写在这里
 }
