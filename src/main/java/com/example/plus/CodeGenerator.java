@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * CodeGenerator:
+ * CodeGenerator:逆向生成表数据启动main方法
  *
  * @author zhangxiaoxiang
  * @date: 2019/07/02
@@ -122,13 +122,14 @@ public class CodeGenerator {
         templateConfig.setXml(null);
         mpg.setTemplate(templateConfig);
 
-        // 策略配置
+        // 策略配置(驼峰命名与数据库下划线转换,RestController)
         StrategyConfig strategy = new StrategyConfig();
-        //strategy.setNaming(NamingStrategy.underline_to_camel);
-        //strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+        strategy.setNaming(NamingStrategy.underline_to_camel);
+        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         //strategy.setSuperEntityClass("com.baomidou.ant.common.BaseEntity");
         strategy.setEntityLombokModel(true);
-        //strategy.setRestControllerStyle(true);
+        strategy.setRestControllerStyle(true);
+
         // 公共父类
         //strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         // 写于父类中的公共字段
