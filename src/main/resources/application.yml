@@ -9,3 +9,6 @@ spring:
 logging:
   level:
     com.example.plus.mapper : debug
+#mybatis plusxml路径配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
